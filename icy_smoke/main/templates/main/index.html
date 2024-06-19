@@ -36,12 +36,124 @@
 
 
  
+  
 
-    
- 
-
-    
-
-
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+        .button {
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: nowrap;
+            width: 120px; /* Установим фиксированную ширину для меню */
+        }
+        .menu-container:hover .menu {
+            display: block;
+        }
+        .menu-item {
+            position: relative;
+            cursor: pointer;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            font-size: 14px;
+            width: 100%; /* Установим ширину 100%, чтобы элементы меню занимали всю ширину контейнера */
+            box-sizing: border-box; /* Включим padding и border в общую ширину элемента */
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: nowrap;
+            width: 150px; /* Установим фиксированную ширину для подменю */
+            box-sizing: border-box; /* Включим padding и border в общую ширину элемента */
+        }
+        .menu-item:hover .submenu {
+            display: block;
+        }
+        .submenu-item {
+            padding: 5px;
+            font-size: 12px;
+            border-bottom: 1px solid #ccc;
+            width: 100%; /* Установим ширину 100%, чтобы элементы подменю занимали всю ширину контейнера */
+            box-sizing: border-box; /* Включим padding и border в общую ширину элемента */
+        }
+        .submenu-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="button">Выбрать город</button>
+        <div class="menu">
+            <div class="menu-item">Сочи
+                <div class="submenu">
+                    <div class="submenu-item">ул. Навагинская 9д</div>
+                    <div class="submenu-item">ул. Транспортная 2А</div>
+                    <div class="submenu-item">ул. Советская 40</div>
+                    <div class="submenu-item">ул. Войкова 1/1</div>
+                </div>
+            </div>
+            <div class="menu-item">Лазаревское
+                <div class="submenu">
+                    <div class="submenu-item">Невский пр.</div>
+                    <div class="submenu-item">Мввв</div>
+                    <div class="submenu-item">ул. Транспортная 2А.</div>
+                </div>
+            </div>
+            <div class="menu-item">Дагомыс
+                <div class="submenu">
+                    <div class="submenu-item">Красный пр.</div>
+                    <div class="submenu-item">Вокзальная маг.</div>
+                    <div class="submenu-item">Ипподромская</div>
+                </div>
+            </div>
+            <div class="menu-item">Лоо
+                <div class="submenu">
+                    <div class="submenu-item">Красный пр.</div>
+                    <div class="submenu-item">Вокзальная маг.</div>
+                    <div class="submenu-item">Ипподромская</div>
+                </div>
+            </div>
+            <div class="menu-item">Сириус
+                <div class="submenu">
+                    <div class="submenu-item">Красный пр.</div>
+                    <div class="submenu-item">Вокзальная маг.</div>
+                    <div class="submenu-item">Ипподромская</div>
+                </div>
+            </div>
+            <div class="menu-item">Адлер
+                <div class="submenu">
+                    <div class="submenu-item">Красный пр.</div>
+                    <div class="submenu-item">Вокзальная маг.</div>
+                    <div class="submenu-item">Ипподромская</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<button class="button_test">Выбрать город</button>
 {% endblock %}
