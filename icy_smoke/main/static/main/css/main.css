@@ -1,0 +1,150 @@
+.black_foter {
+    background-color: black;
+    height: 78px;
+    width: 100%;
+    display: flex;
+}
+
+.text_foter{
+    color: white;
+    width: 22%;
+    height: auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+
+}
+
+.logo_div{
+    width: 79px;
+    height: 79px;
+    margin-left: 8%;
+}
+
+.phone{
+
+    min-width: auto;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-top: 1.2%;
+    
+    
+}
+
+.phone_1{
+    margin: auto;
+    text-align: center;
+}
+
+.branches{
+    color: white;
+}
+
+
+
+.branches {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border: none;
+    width: min-content;
+    height: min-content;
+    margin-top: 2%;
+    margin-left: 6%
+
+
+
+  }
+
+  .branches_btn {
+    position: relative;
+    display: inline-block;
+    border-radius: 8px;
+    border: 0.5px solid white;
+    color: rgb(255, 255, 255);
+    background-color: #747474;
+    transition: background-color 0.3s ease; /* Время анимации и тип */
+  }
+  
+  .branches_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .branches_content a {
+    color: black;
+    padding: 8px 11px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .branches_content a:hover {background-color: #ddd;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .branches:hover .branches_content {display: block;}
+  
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .branches:hover .branches_btn {background-color: #474747;}
+
+
+
+
+  /* Reset для стилей */
+  
+  /* Стили для выпадающего списка */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Растягиваем по ширине страницы */
+    min-height: 1em; /* Минимальная высота (можно настроить по желанию) */
+  }
+  
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Растягиваем кнопку по ширине родительского элемента */
+    text-align: left; /* Выравниваем текст по левому краю */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%; /* Растягиваем выпадающее меню по ширине */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px 0; /* Отступы внутри выпадающего списка */
+  }
+  
+  .city {
+    padding: 5px 20px; /* Отступы для каждого города */
+    border-bottom: 1px solid #ddd; /* Разделительные линии между городами */
+  }
+  
+  .city a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Отступ между названием города и адресами */
+  }
+  
+  .address {
+    font-size: 14px;
+    color: #666;
+  }
